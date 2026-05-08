@@ -34,7 +34,7 @@ const Skills = () => {
           {skillsData.map((skill) => (
             <div key={skill.id} className="flex flex-col items-center gap-6">
               
-              {/* 120x120 px Kare ve Croplanmış İkon */}
+              {/* İkonlar */}
               <div className="w-[120px] h-[120px] overflow-hidden rounded-xl shadow-sm">
                 <img 
                   src={skill.icon} 

@@ -12,9 +12,6 @@ function App() {
   return (
     
     <div className="min-h-screen transition-colors duration-300 bg-light-bg dark:bg-dark-bg">
-      
-      {/* Dekoratif Arka Plan Elemanları */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-20 bg-neutral-gray dark:bg-dark-card rounded-b-full -z-10" />
 
      <Header /> 
      <Hero /> 

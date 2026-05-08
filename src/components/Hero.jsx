@@ -9,16 +9,14 @@ const Hero = () => {
   if (!content) return null;
 
   return (
-    // REVİZYON 1: min-h-screen mobilde KALDIRILDI. Sadece md:min-h-screen (masaüstü) kaldı.
-    // REVİZYON 2: py-12 mobilde py-8 (daha az dikey boşluk) olarak güncellendi.
+    
     <section className="relative w-full md:min-h-[calc(100vh-80px)] bg-[#F4F4F4] dark:bg-[#2A262B] transition-colors duration-300 flex items-center justify-center px-10 md:px-0 overflow-hidden py-8 md:py-12">
       
       {/* Dekoratif Şekiller - Mobilde Hidden */}
       <div className="hidden md:block absolute right-0 top-[60%] w-[100px] h-[45px] bg-[#EA2678] rounded-l-full z-0 translate-x-4 md:translate-x-0"></div>
       <div className="hidden md:block absolute bottom-0 right-[15%] w-[110px] h-[110px] border-[20px] border-[#D9D9D9] dark:border-light-secondary rounded-full translate-y-1/2 z-20"></div>
 
-      {/* REVİZYON 3: Taşıyıcı kutunun üst padding'i pt-6 yapılarak fotoğraf yukarı itildi. */}
-      {/* pb-12 yapılarak metinden sonra Profile'a ferah bir geçiş sağlandı. */}
+      
       <div className="max-w-[1107px] w-full mx-auto flex flex-col md:flex-row justify-between items-center relative z-10 pt-6 pb-12 md:py-0">
         
         {/* SAĞ GÖRSEL (Mobilde Üstte) */}

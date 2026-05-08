@@ -7,14 +7,14 @@ const Projects = () => {
   const content = data[lang].projects; 
 
   return (
-    <section className="w-full py-20 px-10 md:px-0 bg-white dark:bg-[#2A262B] transition-colors duration-300">
+    <section className="w-full py-20 pb-40 px-10 md:px-0 bg-white dark:bg-dark-card transition-colors duration-300">
       <div className="max-w-[1107px] mx-auto">
         
         <h2 className="text-[36px] md:text-[48px] font-bold text-center mb-20 text-[#0A0A14] dark:text-white">
           {lang === 'en' ? 'Projects' : 'Projeler'}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-50 md:gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-40 md:gap-20">
           {content?.list?.map((project, index) => {
             const isBlue = index % 2 === 0;
             
@@ -54,8 +54,8 @@ const Projects = () => {
                   </a>
                 </div>
 
-                {/* LAPTOP TAŞMA ALANI: mt-auto ile en alta itip, -mb ile dışarı sarktık */}
-                <div className="w-full mt-auto -mb-20 md:-mb-24 relative z-20 group">
+                {/* LAPTOP TAŞMA ALANI */}
+                <div className="w-full mt-auto -mb-15 md:-mb-24 relative z-20 group">
   
                 {/* Ana Laptop Çerçevesi */}
                 <img 
@@ -64,8 +64,7 @@ const Projects = () => {
                     alt="Laptop Frame"
                 />
 
-                {/* Ekran Görüntüsü: Laptopun ekran alanına göre konumlandırıldı */}
-                {/* Bu yüzdelik değerler standart mockup'lara göre ayarlanmıştır (top-left-width-height) */}
+                
                 <div className="absolute top-[6%] left-[12.2%] w-[75.5%] h-[79%] overflow-hidden z-0">
                     <img 
                     src={project.screenshot} 

@@ -5,14 +5,14 @@ const Header = () => {
   const { lang, isDarkMode, toggleLang, toggleTheme } = useContext(SiteContext);
 
   return (
-    // Dış kapsayıcı: Tüm ekranı kaplar, padding verir
+    // Dış kapsayıcı
     <header className="w-full px-10 py-10 bg-[#F4F4F4] dark:bg-[#2A262B] transition-colors duration-300">
 
          {/* Üst Orta Gri Yarım Daire */}
       <div className=" hidden md:block absolute top-0 left-1/3 -translate-x-1/2 w-[120px] h-[60px] bg-[#D9D9D9] dark:bg-light-secondary rounded-b-full z-0"></div>
 
       
-      {/* İç kapsayıcı: Max 1107px olur ve Hero ile hizalanır */}
+      {/* İç kapsayıcı */}
       <div className="max-w-[1107px] w-full mx-auto flex justify-end items-center gap-3 md:gap-6">
         
         {/* Dark Mode Switcher */}
